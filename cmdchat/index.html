@@ -1,0 +1,80 @@
+﻿<html>
+
+<head>
+    <title>$_cmd-chat</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js" type="text/javascript"></script>
+
+    <script>
+        Josh = {
+            Debug: false
+        };
+
+    </script>
+    <script src="js/killring.js" type="text/javascript"></script>
+    <script src="js/history.js" type="text/javascript"></script>
+    <script src="js/readline.js" type="text/javascript"></script>
+    <script src="js/shell.js" type="text/javascript"></script>
+    <script src="js/pathhandler.js" type="text/javascript"></script>
+    <script src="js/myjs.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <style>
+        #title {
+            font-size: 24px;
+            font-family: monospace;
+        }
+
+        body {
+            background-image: url(images/lake.jpg);
+            background-color: rgba(0, 0, 0, 0.1);
+            background-blend-mode: multiply;
+            color: white;
+        }
+
+        .center {
+            margin: 0 auto;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #shell-panel {
+            margin-top: 1rem;
+            width: 90vw;
+            height: 83vh;
+            cursor: text;
+        }
+
+        #shell-view {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 0.5rem;
+            font-family: monospace;
+            font-size: 1.2rem;
+            border: none;
+            color: white;
+            padding: 0.5rem;
+            outline: none;
+        }
+
+    </style><br>
+    <center><span id="title">Welcome to <b>$_cmdchat</b></span></center>
+
+    <div class="center" id="shell-panel" onclick="keyboard();">
+        <div id="shell-view">
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
